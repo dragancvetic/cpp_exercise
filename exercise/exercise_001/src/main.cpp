@@ -74,7 +74,10 @@ int main (int argc, char **argv)
 		}
 	}
 
-	alg.main( );
+	if( false == alg.main( ) ) {
+		printHelp();
+	}
+
 
 	return 0;
 }

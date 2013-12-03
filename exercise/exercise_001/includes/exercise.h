@@ -30,7 +30,7 @@ class Cexerc {
 		 *
 		 * @param dbg_flag		debug log enable flag
 		 */
-		void main( void );
+		bool main( void );
 
 		/**
 		 * array,new,delete,try,catch,throw
@@ -47,6 +47,15 @@ class Cexerc {
 		void set_num( long long a )		{ num= a; }
 		void set_operand1( long a )		{ operand1 = a; }
 		void set_operand2( long a )		{ operand2 = a; }
+
+		Cexerc(void)
+		{
+			test_no=0;
+			dbg_flag=0;
+			num=0;
+			operand1=0;
+			operand2=0;
+		}
 
 	private:
 		int test_no;

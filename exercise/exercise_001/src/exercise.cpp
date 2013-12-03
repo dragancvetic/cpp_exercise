@@ -33,21 +33,27 @@ using namespace std;
 /*
  * Function description is in exercise.h
  */
-void Cexerc::main( void )
+bool Cexerc::main( void )
 {
+	bool ret=false;
+
 	cout << "Hello world!" << endl;
 	cout << "Exercise " << test_no << " - STARTED" << endl;
+
 	switch( test_no ) {
 	case 1:
+		ret = true;
 		this->arrayNewDeleteTryCatchThrow();
 		break;
 	case 2:
+		ret = true;
 		this->divadeByZero();
 		break;
 	default:
 		break;
 	}
 	cout << "Exercise " << test_no << " - ENDED" << endl;
+	return ret;
 }
 
 void Cexerc::arrayNewDeleteTryCatchThrow( void )
@@ -59,6 +65,7 @@ void Cexerc::arrayNewDeleteTryCatchThrow( void )
 	}
 	catch (exception& e)
 	{
+		cout << "UnSuccessfully allocation of " << num << " integers" << endl;
 		cout << "Standard exception: " << e.what() << endl;
 		return;
 	}
