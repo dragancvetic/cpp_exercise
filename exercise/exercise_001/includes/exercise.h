@@ -28,16 +28,23 @@ class algorithm {
 		/**
 		 * The Algoritham's main logic
 		 *
-		 * @param argdir		directory path name
-		 * @param argflag		sort/unsort flag
-		 * @param print_sizes	print sizes enable flag
 		 * @param dbg_flag		debug log enable flag
 		 */
-	void main( bool dbg_flag);
+		void main( bool dbg_flag,
+				int test_no,
+				long long num,
+				long operand1,
+				long operand2 );
+
 		/**
-		 * List all files/folders in the current folder.
+		 * array,new,delete,try,catch,throw
 		 */
-		bool getItem ( void );
+		void arrayNewDeleteTryCatchThrow ( long long num );
+
+		/**
+		 * array,new,delete,try,catch,throw
+		 */
+		void divadeByZero ( int operand1, int operand2 );
 
 	private:
 

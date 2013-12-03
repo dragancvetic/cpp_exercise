@@ -33,8 +33,53 @@ using namespace std;
 /*
  * Function description is in exercise.h
  */
-void algorithm::main( bool dbg_flag )
+void algorithm::main( bool dbg_flag,
+		int test_no,
+		long long num,
+		long operand1,
+		long operand2 )
 {
 	cout << "Hello world!" << endl;
+	cout << "Exercise " << test_no << " - STARTED" << endl;
+	switch( test_no ) {
+	case 1:
+		this->arrayNewDeleteTryCatchThrow( num );
+		break;
+	case 2:
+		this->divadeByZero( operand1, operand2 );
+		break;
+	default:
+		break;
+	}
+	cout << "Exercise " << test_no << " - ENDED" << endl;
 }
 
+void algorithm::arrayNewDeleteTryCatchThrow( long long num )
+{
+	double *p;
+	try {
+		p = new double[num];
+		cout << "No exception. Successfully allocate " << num << " integers" << endl;
+	}
+	catch (exception& e)
+	{
+		cout << "Standard exception: " << e.what() << endl;
+		return;
+	}
+
+	// Make sure to do the delete at the end of the function too:
+	delete[] p;
+}
+
+void algorithm::divadeByZero ( int operand1, int operand2 )
+{
+	cout << "operand1 = " << operand1 << ", operand2 = " << operand2 << "; resulet = " ;
+	try {
+		long a = operand1/operand2;
+		cout << a << endl;
+	}
+	catch (exception& e)
+	{
+		cout << "Standard exception: " << e.what() << endl;
+	}
+}

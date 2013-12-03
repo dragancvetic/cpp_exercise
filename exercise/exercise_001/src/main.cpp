@@ -37,21 +37,37 @@ void printHelp(void);
 
 int main (int argc, char **argv)
 {
-//	char *argdir = NULL;
+	char *argdir = NULL;
 	bool dbg_flag = false;
+	long long num=-1;
+	long operand1=0, operand2=2;
 	int c;
+	int test_no=0;
 	algorithm alg;
 
 	opterr = 0;
 
-	while ((c = getopt (argc, argv, "bd:")) != -1) {
+	while ((c = getopt (argc, argv, "a:b:dn:t:")) != -1) {
 		switch (c)
 		{
+		case 'a':
+			argdir = optarg;
+			operand1 = atol(argdir);
+			break;
 		case 'b':
-			dbg_flag = true;
+			argdir = optarg;
+			operand2 = atol(argdir);
 			break;
 		case 'd':
-//			argdir = optarg;
+			dbg_flag = true;
+			break;
+		case 'n':
+			argdir = optarg;
+			num = atoll(argdir);
+			break;
+		case 't':
+			argdir = optarg;
+			test_no = atoi(argdir);
 			break;
 		case '?':
 			printHelp();
@@ -60,13 +76,14 @@ int main (int argc, char **argv)
 			abort();
 		}
 	}
-//	if(argdir==NULL)
-//	{
-//		printHelp();
-//		return 1;
-//	}
 
-	alg.main( dbg_flag );
+	if( test_no == 0 )
+	{
+		printHelp();
+		return 1;
+	}
+
+	alg.main( dbg_flag, test_no, num, operand1, operand2 );
 
 	return 0;
 }
@@ -74,6 +91,10 @@ int main (int argc, char **argv)
 void printHelp(void)
 {
 	cout << "Options:" << endl;
-	cout << "  -d<path>   Directory path; required parameter" << endl;
-	cout << "  -b         Print-out debug logs" << endl;
+	cout << "  -d         Print-out debug logs" << endl;
+	cout << "  -a<str>    operand1" << endl;
+	cout << "  -b<str>    operand2" << endl;
+	cout << "  -n<str>    Required parameters, long long" << endl;
+	cout << "  -s<str>    String" << endl;
+	cout << "  -t<str>    test number" << endl;
 }

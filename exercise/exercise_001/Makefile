@@ -9,7 +9,7 @@ LIBFLAGS =
 TARGET = exercise_001
 
 
-CC_FLAGS += -g -c -std=c++98 -Wall -pedantic-errors -Wno-variadic-macros -Wpointer-arith -Wshadow -Werror
+CC_FLAGS += -g -c -std=c++0x -Wall -pedantic-errors -Wno-variadic-macros -Wpointer-arith -Wshadow -Werror
 
 CPP_FILES := $(wildcard src/*.cpp)
 OBJ_FILES := $(addprefix obj/,$(notdir $(CPP_FILES:.cpp=.o)))
