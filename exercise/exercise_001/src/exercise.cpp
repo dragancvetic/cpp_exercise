@@ -33,20 +33,16 @@ using namespace std;
 /*
  * Function description is in exercise.h
  */
-void algorithm::main( bool dbg_flag,
-		int test_no,
-		long long num,
-		long operand1,
-		long operand2 )
+void Cexerc::main( void )
 {
 	cout << "Hello world!" << endl;
 	cout << "Exercise " << test_no << " - STARTED" << endl;
 	switch( test_no ) {
 	case 1:
-		this->arrayNewDeleteTryCatchThrow( num );
+		this->arrayNewDeleteTryCatchThrow();
 		break;
 	case 2:
-		this->divadeByZero( operand1, operand2 );
+		this->divadeByZero();
 		break;
 	default:
 		break;
@@ -54,7 +50,7 @@ void algorithm::main( bool dbg_flag,
 	cout << "Exercise " << test_no << " - ENDED" << endl;
 }
 
-void algorithm::arrayNewDeleteTryCatchThrow( long long num )
+void Cexerc::arrayNewDeleteTryCatchThrow( void )
 {
 	double *p;
 	try {
@@ -71,7 +67,7 @@ void algorithm::arrayNewDeleteTryCatchThrow( long long num )
 	delete[] p;
 }
 
-void algorithm::divadeByZero ( int operand1, int operand2 )
+void Cexerc::divadeByZero ( void )
 {
 	cout << "operand1 = " << operand1 << ", operand2 = " << operand2 << "; resulet = " ;
 	try {

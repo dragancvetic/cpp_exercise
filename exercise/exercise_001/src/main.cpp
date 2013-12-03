@@ -37,13 +37,10 @@ void printHelp(void);
 
 int main (int argc, char **argv)
 {
-	char *argdir = NULL;
-	bool dbg_flag = false;
-	long long num=-1;
-	long operand1=0, operand2=2;
 	int c;
-	int test_no=0;
-	algorithm alg;
+	char *argdir = NULL;
+	int dbg_flag=0;
+	Cexerc alg;
 
 	opterr = 0;
 
@@ -52,22 +49,22 @@ int main (int argc, char **argv)
 		{
 		case 'a':
 			argdir = optarg;
-			operand1 = atol(argdir);
+			alg.set_operand1( atol(argdir) );
 			break;
 		case 'b':
 			argdir = optarg;
-			operand2 = atol(argdir);
+			alg.set_operand2( atol(argdir) );
 			break;
 		case 'd':
-			dbg_flag = true;
+			alg.set_dbg_flag(dbg_flag);
 			break;
 		case 'n':
 			argdir = optarg;
-			num = atoll(argdir);
+			alg.set_num( atoll(argdir) );
 			break;
 		case 't':
 			argdir = optarg;
-			test_no = atoi(argdir);
+			alg.set_test_no( atoi(argdir) );
 			break;
 		case '?':
 			printHelp();
@@ -77,13 +74,7 @@ int main (int argc, char **argv)
 		}
 	}
 
-	if( test_no == 0 )
-	{
-		printHelp();
-		return 1;
-	}
-
-	alg.main( dbg_flag, test_no, num, operand1, operand2 );
+	alg.main( );
 
 	return 0;
 }

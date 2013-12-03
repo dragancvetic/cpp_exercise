@@ -23,30 +23,37 @@
 #define EXERCISE_H_
 
 
-class algorithm {
+class Cexerc {
 	public:
 		/**
 		 * The Algoritham's main logic
 		 *
 		 * @param dbg_flag		debug log enable flag
 		 */
-		void main( bool dbg_flag,
-				int test_no,
-				long long num,
-				long operand1,
-				long operand2 );
+		void main( void );
 
 		/**
 		 * array,new,delete,try,catch,throw
 		 */
-		void arrayNewDeleteTryCatchThrow ( long long num );
+		void arrayNewDeleteTryCatchThrow ( void );
 
 		/**
 		 * array,new,delete,try,catch,throw
 		 */
-		void divadeByZero ( int operand1, int operand2 );
+		void divadeByZero ( void );
+
+		void set_test_no( int a)		{ test_no = a; }
+		void set_dbg_flag( int a)		{ dbg_flag = a; }
+		void set_num( long long a )		{ num= a; }
+		void set_operand1( long a )		{ operand1 = a; }
+		void set_operand2( long a )		{ operand2 = a; }
 
 	private:
+		int test_no;
+		int dbg_flag;
+		long long num;
+		long operand1;
+		long operand2;
 
 };
 
