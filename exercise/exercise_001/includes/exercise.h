@@ -42,6 +42,11 @@ class Cexerc {
 		 */
 		void divadeByZero ( void );
 
+		/**
+		 * Prints the types sizes
+		 */
+		void printTypeSizes(void);
+
 		void set_test_no( int a)		{ test_no = a; }
 		void set_dbg_flag( int a)		{ dbg_flag = a; }
 		void set_num( long long a )		{ num= a; }

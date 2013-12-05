@@ -19,6 +19,7 @@
  * e-mail:      dragan.m.cvetic@gmail.com
  */
 #include <iostream>
+#include <typeinfo>
 
 extern "C" {
 #include <string.h>
@@ -49,9 +50,14 @@ bool Cexerc::main( void )
 		ret = true;
 		this->divadeByZero();
 		break;
+	case 3:
+		ret = true;
+		this->printTypeSizes();
+		break;
 	default:
 		break;
 	}
+
 	cout << "Exercise " << test_no << " - ENDED" << endl;
 	return ret;
 }
@@ -86,3 +92,17 @@ void Cexerc::divadeByZero ( void )
 		cout << "Standard exception: " << e.what() << endl;
 	}
 }
+
+void Cexerc::printTypeSizes(void)
+{
+	cout << "Size of the type: " << typeid(char).name() << " is: " << sizeof(char) << endl;
+	cout << "Size of the type: " << typeid(int).name() << " is: " << sizeof(int) << endl;
+	cout << "Size of the type: " << typeid(short).name() << " is: " << sizeof(short) << endl;
+	cout << "Size of the type: " << typeid(long).name() << " is: " << sizeof(long) << endl;
+	cout << "Size of the type: " << typeid(long long).name() << " is: " << sizeof(long long) << endl;
+	cout << "Size of the type: " << typeid(float).name() << " is: " << sizeof(float) << endl;
+	cout << "Size of the type: " << typeid(double).name() << " is: " << sizeof(double) << endl;
+	cout << "typeid of this is: " << typeid(this).name() << " is: " << sizeof(this) << endl;
+
+}
+
