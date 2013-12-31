@@ -1,4 +1,4 @@
 cpp_excercise
 =============
 
-my c++ excercise
+my c++ exercise
