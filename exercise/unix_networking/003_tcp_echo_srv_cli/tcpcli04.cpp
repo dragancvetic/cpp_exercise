@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 {
 	int					i, sockfd[5];
 	struct sockaddr_in	servaddr;
+	socklen_t addrlen;
 
 
 	if (argc != 2) {
@@ -27,6 +28,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < 5; i++) {
 		sockfd[i] = Socket(AF_INET, SOCK_STREAM, 0);
 
+
 //	Specify server's IP address and port
 
 		memset(&servaddr, 0, sizeof(servaddr));
@@ -37,6 +39,9 @@ int main(int argc, char *argv[])
 //	Establish connection with server
 
 		Connect(sockfd[i], (sockaddr *) &servaddr, sizeof(servaddr));
+
+		cout << endl << "getsockname after connect()" << endl;
+		getsockname_helper(sockfd[i], &servaddr, &addrlen);
 	}
 
 	str_cli(stdin, sockfd[0]);		/* do it all */

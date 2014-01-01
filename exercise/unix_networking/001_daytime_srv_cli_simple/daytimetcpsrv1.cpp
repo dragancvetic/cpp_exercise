@@ -8,7 +8,7 @@ extern "C" {
 #include <time.h>
 }
 
-#include "daytime.h"
+#include "local.h"
 
 using namespace std;
 
@@ -60,9 +60,9 @@ int main(void)
 	for ( ; ; ) {
 		len = sizeof(cliaddr);
 		connfd = Accept(listenfd, (struct sockaddr *) &cliaddr, &len);
-		printf("connection from %s, port %d\n",
-			   Inet_ntop(AF_INET, &cliaddr.sin_addr, buff, sizeof(buff)),
-			   ntohs(cliaddr.sin_port));
+		cout << "connection from ";
+		cout << Inet_ntop(AF_INET, &cliaddr.sin_addr, buff, sizeof(buff));
+		cout << ", port " << ntohs(cliaddr.sin_port) << endl;
 
 		ticks = time(NULL);
 		snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));

@@ -17,9 +17,9 @@ clean:
 
 
 tcpcli01: tcpcli01.cpp
-	${CC} ${CCFLAGS} -o $@ $< ${LIBS}
+	${CC} ${CCFLAGS} -o $@ $< tools.cpp ${LIBS}
 tcpcli04: tcpcli04.cpp
-	${CC} ${CCFLAGS} -o $@ $< ${LIBS}
+	${CC} ${CCFLAGS} -o $@ $< tools.cpp ${LIBS}
 
 tcpserv01: tcpserv01.cpp
 	${CC} ${CCFLAGS} -o $@ $< ${LIBS}

@@ -24,7 +24,7 @@ int main(void)
 
 	listenfd = Socket(AF_INET, SOCK_STREAM, 0);
 
-	memset(&servaddr, 0, sizeof(servaddr));
+	bzero(&servaddr, sizeof(servaddr));
 	servaddr.sin_family      = AF_INET;
 	servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	servaddr.sin_port        = htons(SERV_PORT);

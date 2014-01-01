@@ -10,9 +10,6 @@
 /* Define to 1 if you have the <arpa/inet.h> header file. */
 #define HAVE_ARPA_INET_H 1
 
-/* Define to 1 if you have the `bzero' function. */
-#define HAVE_BZERO 1
-
 /* Define to 1 if the /dev/streams/xtiso/tcp device exists */
 /* #undef HAVE_DEV_STREAMS_XTISO_TCP */
 

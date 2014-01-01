@@ -17,13 +17,28 @@
 				<configuration artifactName="${ProjName}" buildProperties="" description="" id="0.795330453" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
 					<folderInfo id="0.795330453." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.1349276244" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
-							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.1349276244.2018717673" name=""/>
-							<builder id="org.eclipse.cdt.build.core.settings.default.builder.603060533" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<targetPlatform binaryParser="" id="org.eclipse.cdt.build.core.prefbase.toolchain.1349276244.2018717673" name=""/>
+							<builder id="org.eclipse.cdt.build.core.settings.default.builder.603060533" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name=""/>
+								</outputEntries>
+							</builder>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.2082662299" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.29020579" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.574922338" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.28116518" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1786415265" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/usr/include"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.6"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.6/bits"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.6/ext"/>
+									<listOptionValue builtIn="false" value="/usr/include/i386-linux-gnu/bits"/>
+									<listOptionValue builtIn="false" value="/usr/include/i386-linux-gnu"/>
+									<listOptionValue builtIn="false" value="/usr/include/rpc"/>
+									<listOptionValue builtIn="false" value="/usr/include/GL"/>
+									<listOptionValue builtIn="false" value="/usr/include/i386-linux-gnu/sys"/>
+								</option>
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1565731454" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.623563664" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
@@ -31,6 +46,101 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="0.795330453.1295225641" name="daytimetcpcli.cpp" rcbsApplicability="disable" resourcePath="exercise/unix_networking/daytime_srv_cli_simple/daytimetcpcli.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.253743615">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.253743615" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.802885478" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.899373812" name="daytimetcpsrv.cpp" rcbsApplicability="disable" resourcePath="exercise/unix_networking/daytime_srv_cli_simple/daytimetcpsrv.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.841537376">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.841537376" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1871185809" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1121867532" name="error.cpp" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/error.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.1100751388">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.1100751388" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.59901312" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1125324594" name="dg_echo.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/dg_echo.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.2059521354">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.2059521354" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1553143595" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1066682581" name="error.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/error.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.603296968">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.603296968" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1874465619" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1825735929" name="wraplib.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wraplib.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1068174608">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1068174608" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1387035937" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1895034024" name="dg_cli.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/dg_cli.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.51829391">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.51829391" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1817060159" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.12016410" name="wrapstdio.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wrapstdio.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.234198937">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.234198937" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1395747915" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1987803250" name="wrapsock.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wrapsock.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1591761136">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1591761136" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.387606603" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1165288943" name="str_echo.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/str_echo.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1992034378">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1992034378" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.2111841130" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.508117677" name="signal.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/signal.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1232320381">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1232320381" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.2058025887" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.316812170" name="wrapsock.cpp" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wrapsock.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.944900979">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.944900979" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1100310597" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.472276808" name="str_cli.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/str_cli.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1925582758">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1925582758" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1722875540" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1631437988" name="writen.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/writen.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.18039804">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.18039804" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1349673711" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.133482872" name="readline.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/readline.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.382113632">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.382113632" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1555606717" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1540977651" name="wrapunix.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wrapunix.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.833853530">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.833853530" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1205892796" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.702400925" name="daytimetcpcli.cpp" rcbsApplicability="disable" resourcePath="exercise/unix_networking/001_daytime_srv_cli_simple/daytimetcpcli.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.1730049828">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.1730049828" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.729248630" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1645864238" name="daytimetcpsrv.cpp" rcbsApplicability="disable" resourcePath="exercise/unix_networking/001_daytime_srv_cli_simple/daytimetcpsrv.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.422623637">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.422623637" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.2144753693" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.1939400356" name="client.cpp" rcbsApplicability="disable" resourcePath="exercise/linux_networking/client.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.143324462">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.143324462" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1278294660" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
@@ -39,24 +149,58 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="cpp_excercise.null.72881718" name="cpp_excercise"/>
 	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="0.795330453">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
 		<buildTargets>
-			<target name="all" path="excercise/excercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="all" path="exercise/unix_networking/005_udp_server_client" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>all</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
-			<target name="clean" path="excercise/excercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="clean" path="exercise/unix_networking/005_udp_server_client" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/unix_networking/lib" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/unix_networking/lib" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/network_programming" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/network_programming" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
@@ -64,7 +208,6 @@
 			</target>
 			<target name="all" path="exercise/exercise_002" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
 				<buildTarget>all</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
@@ -72,13 +215,36 @@
 			</target>
 			<target name="clean" path="exercise/exercise_002" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/unix_networking/daytime_srv_cli_simple" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
 				<buildArguments/>
 				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
-			<target name="all" path="ws_exercise/exercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="daytimetcpcli" path="exercise/unix_networking/daytime_srv_cli_simple" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>daytimetcpcli</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="daytimetcpsrv" path="exercise/unix_networking/daytime_srv_cli_simple" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>daytimetcpsrv</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/unix_networking/daytime_srv_cli_simple" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
 				<buildArguments/>
 				<buildTarget>all</buildTarget>
@@ -86,7 +252,15 @@
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
-			<target name="clean" path="ws_exercise/exercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="all" path="exercise/unix_networking/003_tcp_echo_srv_cli" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/unix_networking/003_tcp_echo_srv_cli" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
 				<buildArguments/>
 				<buildTarget>clean</buildTarget>
@@ -96,12 +270,130 @@
 			</target>
 			<target name="all" path="exercise/exercise_003" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>all</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
 			<target name="clean" path="exercise/exercise_003" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/unix_networking/002_byteorder" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/unix_networking/002_byteorder" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/showip" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/showip" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="client" path="exercise/linux_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>client</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/linux_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="showip" path="exercise/linux_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>showip</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/unix_networking/004_socketopt" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/unix_networking/004_socketopt" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="ws_exercise/exercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="ws_exercise/exercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/unix_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="daytimetcpcli" path="exercise/unix_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>daytimetcpcli</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="daytimetcpsrv" path="exercise/unix_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>daytimetcpsrv</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/unix_networking/001_daytime_srv_cli_simple" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/unix_networking/001_daytime_srv_cli_simple" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
 				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
@@ -110,6 +402,7 @@
 			</target>
 			<target name="clean" path="exercise/exercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
@@ -117,7 +410,24 @@
 			</target>
 			<target name="all" path="exercise/exercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="excercise/excercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="excercise/excercise_001" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>

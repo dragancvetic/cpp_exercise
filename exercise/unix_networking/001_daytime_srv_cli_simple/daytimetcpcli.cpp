@@ -12,16 +12,17 @@ extern "C" {
 #include <netinet/in.h>
 }
 
-using namespace std;
+#include "local.h"
 
-#define PORT 	13 // the port client will be connecting to
-#define	MAXLINE		4096	/* max text line length */
+using namespace std;
 
 int main(int argc, char *argv[])
 {
 	int					sockfd, n, m=0;
 	char				recvline[MAXLINE + 1];
 	struct sockaddr_in	servaddr;
+	socklen_t addrlen;
+
 
 	if (argc != 2) {
 		cerr << "usage: <EXE> <IPaddress>" << endl;
@@ -36,6 +37,10 @@ int main(int argc, char *argv[])
 //	function calls (e.g., the calls to connect and read that follow).
 	if ( (sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 		cerr << "socket error: " << strerror(errno) << endl;
+
+	cout << endl << "getsockname after socket()" << endl;
+	getsockname_helper(sockfd, &servaddr, &addrlen);
+
 
 //	Specify server's IP address and port
 
@@ -61,6 +66,9 @@ int main(int argc, char *argv[])
 	if (connect(sockfd, (sockaddr *) &servaddr, sizeof(servaddr)) < 0)
 		cerr << "connect error: " << strerror(errno) << endl;
 
+	cout << endl << "getsockname after connect()" << endl;
+	getsockname_helper(sockfd, &servaddr, &addrlen);
+
 //	Read and display server's reply
 
 //	We read the server's reply and display the result using the standard I/O fputs
@@ -78,7 +86,7 @@ int main(int argc, char *argv[])
 	while ( (n = read(sockfd, recvline, MAXLINE)) > 0) {
 		recvline[n] = 0;	/* null terminate */
 		m+=n;
-		cout << "num of bytes recved: " << m << endl;
+		cout << endl << "num of bytes recved: " << m << endl;
 		cout << "message received: "<< recvline << endl;
 	}
 	if (n < 0)

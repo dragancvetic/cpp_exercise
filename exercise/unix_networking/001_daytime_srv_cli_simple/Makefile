@@ -1,24 +1,24 @@
-#include ../Make.defines
 
-# Source files that are part of this
-SOURCES 	= $(notdir $(wildcard *.cpp))
-# Create the list of objects from the source files
-OBJS    	= $(addprefix ,$(SOURCES:%.cpp=%))
+PROGS =	daytimetcpcli daytimetcpsrv daytimetcpsrv1 
 
-LIBS = -L../lib
-LIBFLAGS = -ltcpip
+LIBS = -L../lib -ltcpip
 INCLUDES = -I../includes
 
 CC=g++
-CCOPTS= -g -O0 -std=c++0x -Wall -Wextra -pedantic-errors -Wno-variadic-macros -Wpointer-arith -Wshadow -Werror
+CCFLAGS= ${INCLUDES} -g -O0 -std=c++0x -D_REENTRANT -Wall -Wextra -pedantic-errors -Wno-variadic-macros -Wpointer-arith -Wshadow -Werror
 
-.PHONY: all cleanmake clean
+.PHONY: all clean
 
-all: $(OBJS)
+all: $(PROGS)
 
 clean:
-	rm -f $(OBJS) *.o
+	rm -f $(PROGS) *.o
 
-%: %.cpp
-	$(CC) $(CCOPTS) $(INCLUDES) -o $@ $< $(LIBS) $(LIBFLAGS)
-	
+
+daytimetcpcli: daytimetcpcli.cpp
+	${CC} ${CCFLAGS} -o $@ $< tools.cpp ${LIBS}
+
+daytimetcpsrv: daytimetcpsrv.cpp
+	${CC} ${CCFLAGS} -o $@ $< ${LIBS}
+daytimetcpsrv1: daytimetcpsrv1.cpp
+	${CC} ${CCFLAGS} -o $@ $< ${LIBS}
