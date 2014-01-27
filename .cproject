@@ -46,6 +46,16 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="0.795330453.1139481595" name="byteorder.cpp" rcbsApplicability="disable" resourcePath="exercise/Answer_3/byteorder.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.1688440707">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.1688440707" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1465217159" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="0.795330453.986653980" name="byteorder.cpp" rcbsApplicability="disable" resourcePath="exercise/c++/Answer_3/byteorder.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.1182302594">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.1182302594" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.955230985" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
 					<fileInfo id="0.795330453.1295225641" name="daytimetcpcli.cpp" rcbsApplicability="disable" resourcePath="exercise/unix_networking/daytime_srv_cli_simple/daytimetcpcli.cpp" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.28116518.253743615">
 						<tool id="org.eclipse.cdt.build.core.settings.holder.28116518.253743615" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.802885478" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
@@ -62,42 +72,42 @@
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.1125324594" name="dg_echo.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/dg_echo.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.2059521354">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.2059521354" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.2059521354" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1553143595" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.1066682581" name="error.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/error.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.603296968">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.603296968" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.603296968" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1874465619" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.1825735929" name="wraplib.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wraplib.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1068174608">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1068174608" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1068174608" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1387035937" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.1895034024" name="dg_cli.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/dg_cli.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.51829391">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.51829391" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.51829391" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1817060159" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.12016410" name="wrapstdio.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wrapstdio.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.234198937">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.234198937" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.234198937" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1395747915" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.1987803250" name="wrapsock.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wrapsock.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1591761136">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1591761136" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1591761136" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.387606603" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.1165288943" name="str_echo.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/str_echo.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1992034378">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1992034378" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1992034378" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.2111841130" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.508117677" name="signal.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/signal.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1232320381">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1232320381" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1232320381" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.2058025887" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
@@ -107,22 +117,22 @@
 						</tool>
 					</fileInfo>
 					<fileInfo id="0.795330453.472276808" name="str_cli.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/str_cli.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.1925582758">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1925582758" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.1925582758" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1722875540" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
-					<fileInfo id="0.795330453.1631437988" name="writen.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/writen.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.18039804">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.18039804" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
-							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1349673711" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
-						</tool>
-					</fileInfo>
 					<fileInfo id="0.795330453.133482872" name="readline.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/readline.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.382113632">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.382113632" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.382113632" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1555606717" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
+					<fileInfo id="0.795330453.1631437988" name="writen.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/writen.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.18039804">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.18039804" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1349673711" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
 					<fileInfo id="0.795330453.1540977651" name="wrapunix.c" rcbsApplicability="disable" resourcePath="exercise/unix_networking/lib/wrapunix.c" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.623563664.833853530">
-						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.833853530" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.623563664">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.623563664.833853530" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder.29020579">
 							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1205892796" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 						</tool>
 					</fileInfo>
@@ -215,6 +225,22 @@
 			</target>
 			<target name="clean" path="exercise/exercise_002" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="all" path="exercise/c++/linux_features/splice" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="exercise/c++/linux_features/splice" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
@@ -314,23 +340,16 @@
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
-			<target name="client" path="exercise/linux_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="all" path="exercise/Answer_3" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildTarget>client</buildTarget>
+				<buildTarget>all</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
-			<target name="clean" path="exercise/linux_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="clean" path="exercise/Answer_3" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
 				<buildTarget>clean</buildTarget>
-				<stopOnError>true</stopOnError>
-				<useDefaultCommand>true</useDefaultCommand>
-				<runAllBuilders>true</runAllBuilders>
-			</target>
-			<target name="showip" path="exercise/linux_networking" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
-				<buildCommand>make</buildCommand>
-				<buildTarget>showip</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>true</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
